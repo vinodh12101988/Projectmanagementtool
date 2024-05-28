@@ -28,7 +28,6 @@ namespace Projectmanagementtool.Controllers
             table_products.Id = Guid.NewGuid();
 
             await _varprojectDBContext.ProductList.AddAsync(table_products);
-
             await  _varprojectDBContext.SaveChangesAsync();
 
             return Ok(table_products);
